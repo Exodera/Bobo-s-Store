@@ -9,7 +9,8 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    max-width: 1280px;
+    border-bottom: 1px solid red;
+
     margin: 0 auto;
 }
 
@@ -18,6 +19,7 @@ a{
    color: black;
    display: inline-block;
    padding: 1rem;
+   margin: 0 2rem;
 }
 a:hover{
     background-color: rgb(240, 26, 26);
@@ -30,7 +32,7 @@ nav{
     left: 0;
     right: 0;
     z-index: 99;
-    border-bottom: 3px solid var(--primary);
+    
 }
 
 .logo{
@@ -39,11 +41,9 @@ nav{
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
-    
+    cursor: pointer; 
 }
-.links{
-    display: none;
-}
+
 
 .hamburger{
     appearance: none;
@@ -56,7 +56,7 @@ nav{
 .hamburger span{
     width: 33px;
     height: 4px;
-    display: block;
+    display: none;
     background-color: var(--dark);
     margin-bottom: 3px;
     margin-right: 1rem;
@@ -84,6 +84,17 @@ nav{
    opacity: 0;
    transform: translateX(15px);
 
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger span{
+        display: block;
+    }
+
+    .links{
+        display: none;
+    }
+    
 }
  
 
