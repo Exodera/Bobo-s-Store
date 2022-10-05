@@ -1,27 +1,23 @@
-import React from 'react'
+
 import {Link} from 'react-router-dom'
 import "./Navbar.css"
+import { useState, React } from 'react'
 
 
 
 const Navbar = () => {
+    const [isMobile, setIsMobile] = useState(false);
 
     const handleOnClick = () =>{
-
-        const hamburger = document.querySelector('.hamburger');
-        hamburger.addEventListener('click', ()=>{
-            this.classList.toggle("is-active");
-        })
-       
-
+        setIsMobile(!isMobile);
     }
   return (
     <nav>
         <div className='navbar'>
             <span className='logo'>Bobo's Store</span>
 
-            <div className='links'>
-                <Link to = "/food" className='is-active'> Food</Link>
+            <div className={isMobile? "mobile-links": "links"}>
+                <Link to = "/food" className='is-active'>Food</Link>
                 <Link to = "/drinks">Drinks</Link>
                 <Link to = "/callUs">Call Us</Link>
             </div>

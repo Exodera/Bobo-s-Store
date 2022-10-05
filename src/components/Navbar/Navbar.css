@@ -94,6 +94,11 @@ nav{
     .links{
         display: none;
     }
+    .mobile-links a{
+        display: block;
+        width: 100%;
+        background-color: aqua;
+    }
     
 }
  
