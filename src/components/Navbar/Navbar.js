@@ -1,4 +1,4 @@
-
+import {MdShoppingBasket} from 'react-icons/md'
 import {Link} from 'react-router-dom'
 import "./Navbar.css"
 import { useState, React } from 'react'
@@ -21,6 +21,12 @@ const Navbar = () => {
                 <Link to = "/drinks">Drinks</Link>
                 <Link to = "/callUs">Call Us</Link>
             </div>
+
+            <div className="basket">
+                <MdShoppingBasket color='red' className='bask-icon'/>
+                <p>Basket</p>
+            </div>
+            
 
             <button className='hamburger' onClick={handleOnClick}> 
             <span></span>

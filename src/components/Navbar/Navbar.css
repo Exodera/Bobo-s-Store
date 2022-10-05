@@ -5,10 +5,12 @@
 }
 
 .navbar{
+    box-sizing: border-box;
     background-color: #D9D9D9;
     display: flex;
     position: relative;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid red;
 
     margin: 0 auto;
@@ -18,7 +20,7 @@ a{
    text-decoration: none;
    color: black;
    display: inline-block;
-   padding: 1rem;
+   padding: 1.2rem;
    
 }
 a:hover{
@@ -46,8 +48,9 @@ nav{
 }
 
 
+
 .hamburger{
-    appearance: none;
+    display: none;
     border: none;
     user-select: none;
     cursor: pointer;
@@ -88,6 +91,17 @@ nav{
 }
 
 @media screen and (max-width: 768px) {
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+    }
+    .bask-icon{
+        display: none
+    }
+    .basket p{
+        display: none;
+    }
+
     .hamburger span{
         display: block;
     }
@@ -114,6 +128,18 @@ nav{
     
     
 }
+
+.basket {
+    display: flex;
+    margin: 0 1.5rem;  
+}
+
+.basket p{
+    
+    padding: 0 7px;
+    
+}
+ 
  
 
 
