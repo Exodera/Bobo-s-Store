@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav>
         <div className='navbar'>
-            <span className='logo'>Bobo's Store</span>
+            <Link to = "/" className='logo'>Bobo's Store</Link>
 
             <div className={isMobile? "mobile-links": "links"}>
                 <Link to = "/food" className='is-active'>Food</Link>
