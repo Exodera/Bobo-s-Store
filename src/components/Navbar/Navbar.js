@@ -6,6 +6,7 @@ import { useState, React } from 'react'
 
 
 const Navbar = () => {
+    const [cartItems,setCartItems] = useState(0)
     const [isMobile, setIsMobile] = useState(false);
 
     const handleOnClick = () =>{
@@ -24,7 +25,7 @@ const Navbar = () => {
 
             <div className="basket">
                 <MdShoppingBasket color='red' className='bask-icon'/>
-                <p>Basket</p>
+                <p>Basket ({cartItems})</p>
             </div>
             
 

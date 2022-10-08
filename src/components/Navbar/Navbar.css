@@ -28,6 +28,7 @@ a:hover{
     color: white;
 }
 nav{
+    text-transform: uppercase;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -135,6 +136,7 @@ nav{
 }
 
 .basket {
+    cursor: pointer;
     display: flex;
     margin: 0 1.5rem;  
 }
