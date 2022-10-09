@@ -5,8 +5,13 @@ import "./Global.css"
 const Home = () => {
   return (
     <div>
-      <h1>Ongoing Specials</h1>
+      <h2>Ongoing Specials</h2>
       <GridItems/>
+      <h2>Food Items</h2>
+      <GridItems/>
+      <h2>Drinks</h2>
+      <GridItems/>
+
 
     </div>
   )

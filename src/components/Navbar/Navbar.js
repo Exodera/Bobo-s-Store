@@ -11,6 +11,7 @@ const Navbar = () => {
 
     const handleOnClick = () =>{
         setIsMobile(!isMobile);
+        
     }
   return (
     <nav>

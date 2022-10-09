@@ -3,6 +3,7 @@ import GridItem from './GridItem';
 import "./GridItem.css"
 
 const GridItems = () => {
+   
     const GridItems = [
         {
             Name: "Sasko Brown Bread",
@@ -17,23 +18,28 @@ const GridItems = () => {
             Price: "R10.00",
         },
         {
-            Name: "Ozies",
+            Name: "Oozies Biscuits",
+            Price: "R1.99",
+        },
+        {
+            Name: "No Name Butter",
             Price: "R1.99",
         },
 
 
     ];
+    
 
   return (
-    <div className='grid'>
+   
         <div  className='item-container'>
             {
                 GridItems.map((GridItemm)=>{
-                    return <GridItem props= {GridItemm}/>
+                    return <GridItem key={GridItemm.Name} props= {GridItemm}/>
                 })
             }
         </div> 
-    </div>
+   
     
     
   )
