@@ -25,13 +25,16 @@ const GridItems = () => {
     ];
 
   return (
-    <div  className='item-container'>
-        {
-            GridItems.map((GridItemm)=>{
-                return <GridItem props= {GridItemm}/>
-            })
-        }
+    <div className='grid'>
+        <div  className='item-container'>
+            {
+                GridItems.map((GridItemm)=>{
+                    return <GridItem props= {GridItemm}/>
+                })
+            }
+        </div> 
     </div>
+    
     
   )
 }
