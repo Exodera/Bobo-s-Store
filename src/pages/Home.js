@@ -2,6 +2,7 @@ import React from 'react'
 import GridItems from '../components/GridItems/GridItems'
 import "./Global.css"
 
+
 const Home = () => {
   return (
     <div>
